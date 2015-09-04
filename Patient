@@ -1,65 +1,235 @@
-<Patient>
-<name>
- <family value=" Moser" />
- <given value=" Herbert" />
- <given value=" Hannes" />
- <prefix value=" Dipl.Ing." />
- <prefix value=" Hofrat" />
- <suffix value=" BSc" />
- <suffix value=" MBA" />
- </name>
-<telecom>
- <value value=" tel:+43.2682.40400" />
- </telecom>
- <gender value=" male" />
- <birthDate value=" 19611224" />
- <deceasedBoolean value=" false" />
-<address>
- <line value=" Musterstraße 13a" />
- <city value=" Eisenstadt" />
- <state value=" Burgenland" />
- <postalCode value=" 7000" />
- <country value=" Österreich" />
- </address>
-<maritalStatus>
-<coding>
- <system value=" http://spark-dstu2.furore.com/M" />
- <code value=" Married" />
- <display value=" HL7:MaritalStatus" />
- </coding>
- </maritalStatus>
- <multipleBirthBoolean value=" false" />
-<contact>
-<name>
- <family value=" Sorgenvoll" />
- <given value=" Susi" />
- <given value=" " />
- </name>
-<telecom>
- <value value=" tel:+43.676.1234567" />
- </telecom>
-<address>
- <line value=" Musterstraße 1234" />
- <city value=" Graz" />
- <state value=" Steiermark" />
- <postalCode value=" 8011" />
- <country value=" Österreich" />
- </address>
- </contact>
-<communication>
-<language>
-<coding>
- <system value=" urn:ietf:bcp:47" />
- <code value=" nl" />
- <display value=" Dutch" />
- </coding>
- <text value=" Nederlands" />
- </language>
- <preferred value=" true" />
- </communication>
-<managingOrganization>
- <reference value=" http://spark-dstu2.furore.com/Organization/f001" />
- <display value=" Burgers University Medical Centre" />
- </managingOrganization>
- <active value=" true" />
- </Patient>
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="collection"/>
+    <entry>
+        <resource>
+            <StructureDefinition xmlns="http://hl7.org/fhir">
+                <id value="acronym"/>
+                <meta>
+                    <lastUpdated value="2015-04-02T14:21:09.718+02:00"/>
+                </meta>
+                <url value="http://hl7.no/fhir/StructureDefinition/acronym"/>
+                <version value="0.5"/>
+                <name value="OrganizationAcronym"/>
+                <display value="Organization Acronym"/>
+                <publisher value="HL7 Norway"/>
+                <description value="Represents the short (acronym) name for an organization"/>
+                <requirements
+                    value="The ability to add extensions in a structured way is what keeps FHIR resources simple."/>
+                <status value="active"/>
+                <date value="2015-04-02T14:21:09+02:00"/>
+                <mapping>
+                    <identity value="rim"/>
+                    <uri value="http://hl7.org/v3"/>
+                    <name value="RIM"/>
+                </mapping>
+                <type value="extension"/>
+                <abstract value="false"/>
+                <contextType value="resource"/>
+                <context value="Organization"/>
+                <base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+                <snapshot>
+                    <element>
+                        <path value="Extension"/>
+                        <label value="Extension"/>
+                        <short value="Extension"/>
+                        <definition value="An Extension"/>
+                        <min value="0"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="Element"/>
+                        </type>
+                    </element>
+                    <element>
+                        <path value="Extension.id"/>
+                        <representation value="xmlAttr"/>
+                        <short value="xml:id (or equivalent in JSON)"/>
+                        <definition
+                            value="unique id for the element within a resource (for internal references)."/>
+                        <min value="0"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="id"/>
+                        </type>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="n/a"/>
+                        </mapping>
+                    </element>
+                    <element>
+                        <path value="Extension.extension"/>
+                        <short value="Additional Content defined by implementations"/>
+                        <definition
+                            value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+                        <comments
+                            value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+                        <alias value="extensions"/>
+                        <alias value="user content"/>
+                        <min value="0"/>
+                        <max value="*"/>
+                        <type>
+                            <code value="Extension"/>
+                        </type>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="n/a"/>
+                        </mapping>
+                    </element>
+                    <element>
+                        <path value="Extension.url"/>
+                        <representation value="xmlAttr"/>
+                        <short value="Short name for an organization"/>
+                        <definition value="Short name for an organization"/>
+                        <comments
+                            value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
+                        <min value="1"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="uri"/>
+                        </type>
+                        <fixedUri value="http://hl7.no/fhir/StructureDefinition/acronym"/>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="N/A"/>
+                        </mapping>
+                    </element>
+                    <element>
+                        <path value="Extension.value[x]"/>
+                        <short value="Value of extension"/>
+                        <definition
+                            value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+                        <min value="1"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="string"/>
+                        </type>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="N/A"/>
+                        </mapping>
+                    </element>
+                </snapshot>
+                <differential>
+                    <element>
+                        <path value="Extension"/>
+                        <label value="Acronym"/>
+                        <short value="A short name "/>
+                        <definition value="Short name for an organization"/>
+                        <comments
+                            value="Can be used for:&#xD;&#xA;AVDKORTNAVN&#xD;&#xA;POSTKORTNAVN&#xD;&#xA;SEKSJONKORTNAVN"/>
+                        <requirements
+                            value="The ability to add extensions in a structured way is what keeps FHIR resources simple."/>
+                        <min value="0"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="Element"/>
+                        </type>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="N/A"/>
+                        </mapping>
+                    </element>
+                    <element>
+                        <path value="Extension.url"/>
+                        <representation value="xmlAttr"/>
+                        <short value="Short name for an organization"/>
+                        <definition value="Short name for an organization"/>
+                        <comments
+                            value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
+                        <min value="1"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="uri"/>
+                        </type>
+                        <fixedUri value="http://hl7.no/fhir/StructureDefinition/acronym"/>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="N/A"/>
+                        </mapping>
+                    </element>
+                    <element>
+                        <path value="Extension.value[x]"/>
+                        <short value="Value of extension"/>
+                        <definition
+                            value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+                        <min value="1"/>
+                        <max value="1"/>
+                        <type>
+                            <code value="string"/>
+                        </type>
+                        <mapping>
+                            <identity value="rim"/>
+                            <map value="N/A"/>
+                        </mapping>
+                    </element>
+                </differential>
+            </StructureDefinition>            
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <ValueSet xmlns="http://hl7.org/fhir">
+                <id value="rekvirenttype" />
+                <url value="http://hl7.no/fhir/ValueSet/rekvirenttype" />
+                <version value="0.1"/>
+                <name value="Rekvirenttype"/>
+                <useContext>
+                    <coding>
+                        <system value="urn:iso:std:iso:3166" />
+                        <code value="no"/>
+                    </coding>
+                </useContext>
+                <publisher value="HL7 Norge"/>
+                <description value="This valueset indicates the kind of requester of orders. 
+                    Codes from this valueset are both kinds of practitioners (privatpraktiserende spesialister, fastlege) or 
+                    kinds of organizations the practitioner works for (kommunale tjenester, psykisk helsevern)." />
+                <status value="draft" />
+                <date value="2015-06-01"/>
+                <define>
+                    <system value="http://hl7.no/fhir/rekvirenttype"/>
+                    <caseSensitive value="true" />
+                    <concept>
+                        <code value="1" />
+                        <display value="Pasienten selv" />
+                        <definition value="Pasienten selv" />            
+                    </concept>        
+                    <concept>
+                        <code value="41" />
+                        <display value="Somatisk spesialisthelsetjeneste" />
+                        <definition value="Somatisk spesialisthelsetjeneste" />            
+                    </concept>
+                    <concept>
+                        <code value="42" />
+                        <display value="Tverrfaglig spesialisert rusbehandling"/>
+                        <definition value="Tverrfaglig spesialisert rusbehandling"/>
+                    </concept>
+                    <concept>
+                        <code value="44"/>
+                        <display value="Psykisk helsevern"/>
+                        <definition value="inkludert DPS"/>
+                    </concept>
+                    <concept>
+                        <code value="10"/>
+                        <display value="Privatpraktiserende spesialister"/>
+                        <definition value="Leger og psykologer"/>
+                    </concept>
+                    <concept>
+                        <code value="28"/>
+                        <display value="Fastlege/primærlege/legevaktslege"/>
+                        <definition value="Primærhelsetjeneste"/>
+                    </concept>        
+                    <concept>
+                        <code value="88" />
+                        <display value="Andre kommunale tjenester" />
+                        <definition value="Barnehage, skolesektor, PPT Sosialtjeneste, barnevern" />            
+                    </concept>
+                    <concept>
+                        <code value="9"/>
+                        <display value="Andre tjenester"/>
+                        <definition value="Rehabiliteringsinstitusjoner, politi, fengsel, rettsvesen"/>
+                    </concept>
+                </define>
+            </ValueSet>            
+        </resource>
+    </entry>
+</Bundle>

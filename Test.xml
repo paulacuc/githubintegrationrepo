@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="collection"/>
+    <entry>
+        <resource>
+            <ValueSet xmlns="http://hl7.org/fhir">
+                <id value="rekvirenttype" />
+                <url value="http://hl7.no/fhir/ValueSet/rekvirenttype" />
+                <version value="0.1"/>
+                <name value="Rekvirenttype"/>
+                <useContext>
+                    <coding>
+                        <system value="urn:iso:std:iso:3166" />
+                        <code value="no"/>
+                    </coding>
+                </useContext>
+                <publisher value="HL7 Norge"/>
+                <description value="This valueset indicates the kind of requester of orders. 
+                    Codes from this valueset are both kinds of practitioners (privatpraktiserende spesialister, fastlege) or 
+                    kinds of organizations the practitioner works for (kommunale tjenester, psykisk helsevern)." />
+                <status value="draft" />
+                <date value="2015-06-01"/>
+                <define>
+                    <system value="http://hl7.no/fhir/rekvirenttype"/>
+                    <caseSensitive value="true" />
+                    <concept>
+                        <code value="1" />
+                        <display value="Pasienten selv" />
+                        <definition value="Pasienten selv" />            
+                    </concept>        
+                    <concept>
+                        <code value="41" />
+                        <display value="Somatisk spesialisthelsetjeneste" />
+                        <definition value="Somatisk spesialisthelsetjeneste" />            
+                    </concept>
+                    <concept>
+                        <code value="42" />
+                        <display value="Tverrfaglig spesialisert rusbehandling"/>
+                        <definition value="Tverrfaglig spesialisert rusbehandling"/>
+                    </concept>
+                    <concept>
+                        <code value="44"/>
+                        <display value="Psykisk helsevern"/>
+                        <definition value="inkludert DPS"/>
+                    </concept>
+                    <concept>
+                        <code value="10"/>
+                        <display value="Privatpraktiserende spesialister"/>
+                        <definition value="Leger og psykologer"/>
+                    </concept>
+                    <concept>
+                        <code value="28"/>
+                        <display value="Fastlege/primærlege/legevaktslege"/>
+                        <definition value="Primærhelsetjeneste"/>
+                    </concept>        
+                    <concept>
+                        <code value="88" />
+                        <display value="Andre kommunale tjenester" />
+                        <definition value="Barnehage, skolesektor, PPT Sosialtjeneste, barnevern" />            
+                    </concept>
+                    <concept>
+                        <code value="9"/>
+                        <display value="Andre tjenester"/>
+                        <definition value="Rehabiliteringsinstitusjoner, politi, fengsel, rettsvesen"/>
+                    </concept>
+                </define>
+            </ValueSet>            
+        </resource>
+    </entry>
+</Bundle>

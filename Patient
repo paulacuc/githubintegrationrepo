@@ -1,0 +1,72 @@
+
+<Patient>
+<identifier>
+ <value value=" 1.2.40.0.34.99.111.1.2" />
+ </identifier>
+<identifier>
+ <value value=" 1.2.40.0.10.1.4.3.1" />
+ </identifier>
+<name>
+ <family value=" Moser" />
+ <given value=" Herbert" />
+ <given value=" Hannes" />
+ <prefix value=" Dipl.Ing." />
+ <prefix value=" Hofrat" />
+ <suffix value=" BSc" />
+ <suffix value=" MBA" />
+ </name>
+<telecom>
+ <value value=" tel:+43.2682.40400" />
+ </telecom>
+ <gender value=" male" />
+ <birthDate value=" 19611224" />
+ <deceasedBoolean value=" false" />
+<address>
+ <line value=" Musterstraße 13a" />
+ <city value=" Eisenstadt" />
+ <state value=" Burgenland" />
+ <postalCode value=" 7000" />
+ <country value=" Österreich" />
+ </address>
+<maritalStatus>
+<coding>
+ <system value=" http://spark-dstu2.furore.com/M" />
+ <code value=" Married" />
+ <display value=" HL7:MaritalStatus" />
+ </coding>
+ </maritalStatus>
+ <multipleBirthBoolean value=" false" />
+<contact>
+<name>
+ <family value=" Sorgenvoll" />
+ <given value=" Susi" />
+ <given value=" " />
+ </name>
+<telecom>
+ <value value=" tel:+43.676.1234567" />
+ </telecom>
+<address>
+ <line value=" Musterstraße 1234" />
+ <city value=" Graz" />
+ <state value=" Steiermark" />
+ <postalCode value=" 8011" />
+ <country value=" Österreich" />
+ </address>
+ </contact>
+<communication>
+<language>
+<coding>
+ <system value=" urn:ietf:bcp:47" />
+ <code value=" nl" />
+ <display value=" Dutch" />
+ </coding>
+ <text value=" Nederlands" />
+ </language>
+ <preferred value=" true" />
+ </communication>
+<managingOrganization>
+ <reference value=" http://spark-dstu2.furore.com/Organization/f001" />
+ <display value=" Burgers University Medical Centre" />
+ </managingOrganization>
+ <active value=" true" />
+ </Patient>

@@ -1,6 +1,6 @@
 <Patient>
 <identifier>
- <value value=" 1.2.40.0.34.99.111.1.2" />
+ <value value="" />
  </identifier>
 <name>
  <family value=" Moser" />

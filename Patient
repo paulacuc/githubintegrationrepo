@@ -1,7 +1,4 @@
 <Patient>
-<identifier>
- <value value="" />
- </identifier>
 <name>
  <family value=" Moser" />
  <given value=" Herbert" />

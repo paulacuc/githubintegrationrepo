@@ -10,10 +10,10 @@
                 </meta>
                 <url value="http://hl7.no/fhir/StructureDefinition/acronym"/>
                 <version value="0.5"/>
-                <name value="OrganizationAcronym"/>
-                <display value="Organization Acronym"/>
+                <name value="PaulaCuc"/>
+                <display value="Paula Cuc"/>
                 <publisher value="HL7 Norway"/>
-                <description value="Represents the short (acronym) name for an organization"/>
+                <description value="Paula Cuc"/>
                 <requirements
                     value="The ability to add extensions in a structured way is what keeps FHIR resources simple."/>
                 <status value="active"/>

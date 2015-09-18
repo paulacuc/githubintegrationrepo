@@ -58,11 +58,6 @@
                         <display value="Andre kommunale tjenester" />
                         <definition value="Barnehage, skolesektor, PPT Sosialtjeneste, barnevern" />            
                     </concept>
-                    <concept>
-                        <code value="9"/>
-                        <display value="Andre tjenester"/>
-                        <definition value="Rehabiliteringsinstitusjoner, politi, fengsel, rettsvesen"/>
-                    </concept>
                 </define>
             </ValueSet>            
         </resource>

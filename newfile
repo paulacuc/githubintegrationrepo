@@ -62,6 +62,11 @@
                         <display value="Andre tjenester"/>
                         <definition value="Rehabiliteringsinstitusjoner, politi, fengsel, rettsvesen"/>
                     </concept>
+                     <concept>
+                        <code value="92"/>
+                        <display value="test"/>
+                        <definition value="test"/>
+                    </concept>
                 </define>
             </ValueSet>            
         </resource>

@@ -1164,7 +1164,7 @@
     </element>
     <element>
       <path value="Organization.contact.address"/>
-      <short value="Visiting or postal addresses for the contact"/>
+      <short value="Paulaaaaaaaaaaaaaaaaaaaa"/>
       <definition value="Visiting or postal addresses for the contact."/>
       <requirements value="May need to keep track of a contact party&#39;s address for contacting, billing or reporting requirements."/>
       <min value="0"/>

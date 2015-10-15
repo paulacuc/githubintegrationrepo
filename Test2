@@ -4,10 +4,10 @@
     <entry>
         <resource>
             <ValueSet xmlns="http://hl7.org/fhir">
-                <id value="rekvirenttype" />
-                <url value="http://hl7.no/fhir/ValueSet/rekvirenttype" />
+                <id value="paulacuc" />
+                <url value="http://hl7.no/fhir/ValueSet/paulacuc" />
                 <version value="0.1"/>
-                <name value="Rekvirenttype"/>
+                <name value="paulacuc"/>
                 <useContext>
                     <coding>
                         <system value="urn:iso:std:iso:3166" />
@@ -15,13 +15,11 @@
                     </coding>
                 </useContext>
                 <publisher value="HL7 Norge"/>
-                <description value="This valueset indicates the kind of requester of orders. 
-                    Codes from this valueset are both kinds of practitioners (privatpraktiserende spesialister, fastlege) or 
-                    kinds of organizations the practitioner works for (kommunale tjenester, psykisk helsevern)." />
+                <description value="paulacuc" />
                 <status value="draft" />
                 <date value="2015-06-01"/>
                 <define>
-                    <system value="http://hl7.no/fhir/rekvirenttype"/>
+                    <system value="http://hl7.no/fhir/paulacuc"/>
                     <caseSensitive value="true" />
                     <concept>
                         <code value="1" />

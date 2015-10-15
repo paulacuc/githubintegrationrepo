@@ -15,7 +15,7 @@
                     </coding>
                 </useContext>
                 <publisher value="HL7 Norge"/>
-                <description value="paulacuc" />
+                <description value="pauladianacuc" />
                 <status value="draft" />
                 <date value="2015-06-01"/>
                 <define>

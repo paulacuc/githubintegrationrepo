@@ -1176,7 +1176,7 @@
         <identity value="v2"/>
         <map value="PID-11"/>
       </mapping>
-     
+      <mapping>
         <identity value="rim"/>
         <map value="./addr"/>
       </mapping>

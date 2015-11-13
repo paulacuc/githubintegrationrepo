@@ -1166,7 +1166,7 @@
       <path value="Organization.contact.address"/>
       <short value="Paulaaaaaaaaaaaaaaaaaaaa"/>
       <definition value="Visiting or postal addresses for the contact."/>
-      <requirements value="May need to keep track of a contact party&#39;s address for contacting, billing or reporting requirements."/>
+      <requirements value="May need to  track of a contact party&#39;s address for contacting, billing or reporting requirements."/>
       <min value="0"/>
       <max value="1"/>
       <type>

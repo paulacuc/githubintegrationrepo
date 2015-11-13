@@ -2751,7 +2751,7 @@ This is not to be used to record Care Teams, these should be recorded on either 
       <isModifier value="true"/>
       <binding>
         <strength value="required"/>
-        <description value="The type of link bet and another patient resource."/>
+        <description value="The type of link bet and  patient resource."/>
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/link-type"/>
         </valueSetReference>

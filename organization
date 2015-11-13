@@ -1127,7 +1127,7 @@
     <element>
       <path value="Organization.contact.name"/>
       <short value="A name associated with the contact"/>
-      <definition value="A name associated with the contact."/>
+      <definition value="A  associated with the contact."/>
       <requirements value="Need to be able to track the person by name."/>
       <min value="0"/>
       <max value="1"/>
